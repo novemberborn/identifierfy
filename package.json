@@ -4,7 +4,7 @@
   "description": "Rewrites an identifier string so its valid according to ES2015",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/novemberborn/identifierfy/issues"
   },
-  "homepage": "https://github.com/novemberborn/identifierfy#readme"
+  "homepage": "https://github.com/novemberborn/identifierfy#readme",
+  "devDependencies": {
+    "standard": "^5.4.1"
+  }
 }
