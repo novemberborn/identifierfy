@@ -7,7 +7,7 @@ function isValidIdentifier (name) {
 }
 
 // Rewrite the name until it forms a valid identifier.
-export default function identifierfy (name) {
+export default function identifierfy (name, { prefixInvalidIdentifiers = true, prefixReservedWords = true } = {}) {
   // Start with a valid character. This way if the first character in the name
   // is not allowed to be used as the first character it can be prefixed with
   // an underscore, without having to be dropped. The same goes for if the name
@@ -40,7 +40,19 @@ export default function identifierfy (name) {
   if (intermediate === '_') return null
 
   // If the name is valid without the underscore prefix return it as such,
-  // otherwise retain it.
+  // otherwise retain it, unless directed otherwise.
   const withoutPrefix = intermediate.slice(1)
-  return isValidIdentifier(withoutPrefix) ? withoutPrefix : intermediate
+  if (isValidIdentifier(withoutPrefix)) {
+    return withoutPrefix
+  } else if (prefixInvalidIdentifiers && prefixReservedWords) {
+    return intermediate
+  } else {
+    const isIdentifierName = keyword.isIdentifierNameES6(withoutPrefix)
+    const isReservedWord = keyword.isReservedWordES6(withoutPrefix, true)
+    if (!isIdentifierName && !prefixInvalidIdentifiers || isReservedWord && !prefixReservedWords) {
+      return withoutPrefix
+    } else {
+      return intermediate
+    }
+  }
 }
