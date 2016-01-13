@@ -1,0 +1,24 @@
+{
+  "name": "identifierfy",
+  "version": "0.0.0",
+  "description": "Rewrites an identifier string so its valid according to ES2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novemberborn/identifierfy.git"
+  },
+  "keywords": [
+    "es6",
+    "es2015",
+    "identifier"
+  ],
+  "author": "Mark Wubben (https://novemberborn.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novemberborn/identifierfy/issues"
+  },
+  "homepage": "https://github.com/novemberborn/identifierfy#readme"
+}
