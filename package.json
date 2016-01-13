@@ -1,6 +1,6 @@
 {
   "name": "identifierfy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rewrites an identifier string so its valid according to ES2015",
   "main": "index.js",
   "files": [
