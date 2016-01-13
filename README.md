@@ -39,7 +39,7 @@ dropped.
 ## Examples
 
 Input|Resulting identifier|Reason
--|-|-
+:---|:---|:---
 `'class`|`'_class'`|Reserved word
 `'42'`|`'_42'`|Identifiers cannot start with a number
 `'-foo'`|`'foo'`|The `-` is dropped, but since it's as the front `f` is not uppercased
