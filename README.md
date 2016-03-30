@@ -1,6 +1,6 @@
 # identifierfy
 
-Rewrites an identifier string so its valid according to ES2015. Tested with
+Rewrites an identifier string so it's valid according to ES2015. Tested with
 Node.js 0.10 and above.
 
 Please see [this awesome article by Mathias
