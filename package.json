@@ -44,5 +44,12 @@
   "dependencies": {
     "babel-runtime": "^6.3.19",
     "esutils": "^2.0.2"
+  },
+  "babel": {
+    "presets": ["es2015"],
+    "plugins": [
+      "add-module-exports",
+      "transform-runtime"
+    ]
   }
 }
