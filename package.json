@@ -31,18 +31,13 @@
   },
   "homepage": "https://github.com/novemberborn/identifierfy#readme",
   "devDependencies": {
-    "@novemberborn/as-i-preach": "^6.0.0",
+    "@novemberborn/as-i-preach": "^11.0.0",
     "ava": "^0.25.0",
     "nyc": "^11.0.0",
     "rimraf": "^2.5.0"
   },
   "dependencies": {
     "esutils": "^2.0.2"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "@novemberborn/as-i-preach"
-    ]
   },
   "nyc": {
     "instrument": true,

@@ -1,23 +1,23 @@
 import test from 'ava'
 
-import identifierfy from './'
+import identifierfy from '.'
 
 test('prefixes reserved words with an underscore', t => {
   t.is(identifierfy('class'), '_class')
-  t.is(identifierfy('class', { prefixInvalidIdentifiers: false }), '_class')
+  t.is(identifierfy('class', {prefixInvalidIdentifiers: false}), '_class')
 })
 
 test('does not prefix reserved words with an underscore, if directed', t => {
-  t.is(identifierfy('class', { prefixReservedWords: false }), 'class')
+  t.is(identifierfy('class', {prefixReservedWords: false}), 'class')
 })
 
 test('prefixes characters that cannot start as an identifier with an underscore', t => {
   t.is(identifierfy('42'), '_42')
-  t.is(identifierfy('42', { prefixReservedWords: false }), '_42')
+  t.is(identifierfy('42', {prefixReservedWords: false}), '_42')
 })
 
 test('does not prefix characters that cannot start as an identifier with an underscore, if directed', t => {
-  t.is(identifierfy('42', { prefixInvalidIdentifiers: false }), '42')
+  t.is(identifierfy('42', {prefixInvalidIdentifiers: false}), '42')
 })
 
 test('leaves good names as-is', t => {
