@@ -1,3 +1,4 @@
+'use strict'
 const { keyword } = require('esutils')
 
 // Follow Babel's implementation:
