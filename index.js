@@ -1,4 +1,4 @@
-import { keyword } from 'esutils'
+const { keyword } = require('esutils')
 
 // Follow Babel's implementation:
 // <https://github.com/babel/babel/blob/add96d626d98133e26f62ec4c2aeee655bed069a/packages/babel-types/src/validators.js#L153:L164>
@@ -7,7 +7,7 @@ function isValidIdentifier (name) {
 }
 
 // Rewrite the name until it forms a valid identifier.
-export default function identifierfy (name, { prefixInvalidIdentifiers = true, prefixReservedWords = true } = {}) {
+module.exports = function identifierfy (name, { prefixInvalidIdentifiers = true, prefixReservedWords = true } = {}) {
   // Start with a valid character. This way if the first character in the name
   // is not allowed to be used as the first character it can be prefixed with
   // an underscore, without having to be dropped. The same goes for if the name
