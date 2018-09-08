@@ -31,7 +31,7 @@
   "homepage": "https://github.com/novemberborn/identifierfy#readme",
   "devDependencies": {
     "@novemberborn/as-i-preach": "^11.0.0",
-    "ava": "^0.25.0",
+    "ava": "^1.0.0-beta.8",
     "nyc": "^13.0.1"
   },
   "dependencies": {
