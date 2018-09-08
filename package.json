@@ -33,7 +33,7 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^11.0.0",
     "ava": "^0.25.0",
-    "nyc": "^11.0.0",
+    "nyc": "^13.0.1",
     "rimraf": "^2.5.0"
   },
   "dependencies": {
