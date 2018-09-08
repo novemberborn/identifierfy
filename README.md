@@ -1,7 +1,7 @@
 # identifierfy
 
 Rewrites an identifier string so it's valid according to ES2015. Works in
-**Node.js 6** and above.
+Node.js 6 and above.
 
 Please see [this awesome article by Mathias
 Bynens](https://mathiasbynens.be/notes/javascript-identifiers-es6) for
@@ -10,7 +10,7 @@ background.
 ## Installation
 
 ```
-npm install --save identifierfy
+npm install identifierfy
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install --save identifierfy
 The module has one default export, the `identifierfy` function:
 
 ```js
-var identifierfy = require('identifierfy')
+const identifierfy = require('identifierfy')
 ```
 
 Call `identifierfy()` with an identifier string. It'll return a string that can
@@ -59,7 +59,7 @@ Input|Resulting identifier|Reason
 `'💩'`|`null`|Sadly emojis cannot be used as identifiers 😢
 
 ```js
-identifierfy(input, { prefixReservedWords: false })
+identifierfy(input, {prefixReservedWords: false})
 ```
 Input|Resulting identifier|Reason
 :---|:---|:---
@@ -67,7 +67,7 @@ Input|Resulting identifier|Reason
 `'42'`|`'_42'`|Identifiers cannot start with a number
 
 ```js
-identifierfy(input, { prefixInvalidIdentifiers: false })
+identifierfy(input, {prefixInvalidIdentifiers: false})
 ```
 Input|Resulting identifier|Reason
 :---|:---|:---
@@ -75,7 +75,7 @@ Input|Resulting identifier|Reason
 `'42'`|`'42'`|Identifiers cannot start with a number, however prefixing is disabled so it's OK
 
 ```js
-identifierfy(input, { prefixInvalidIdentifiers: false, prefixReservedWords: false })
+identifierfy(input, {prefixInvalidIdentifiers: false, prefixReservedWords: false})
 ```
 Input|Resulting identifier|Reason
 :---|:---|:---
