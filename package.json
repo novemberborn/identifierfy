@@ -10,7 +10,6 @@
     "index.js"
   ],
   "scripts": {
-    "clean": "rimraf coverage",
     "coverage": "nyc npm test",
     "test": "ava",
     "posttest": "as-i-preach"
@@ -33,8 +32,7 @@
   "devDependencies": {
     "@novemberborn/as-i-preach": "^11.0.0",
     "ava": "^0.25.0",
-    "nyc": "^13.0.1",
-    "rimraf": "^2.5.0"
+    "nyc": "^13.0.1"
   },
   "dependencies": {
     "esutils": "^2.0.2"
