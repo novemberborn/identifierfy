@@ -10,9 +10,8 @@
     "index.js"
   ],
   "scripts": {
-    "coverage": "nyc npm test",
-    "test": "ava",
-    "posttest": "as-i-preach"
+    "lint": "as-i-preach",
+    "test": "as-i-preach && nyc ava"
   },
   "repository": {
     "type": "git",
