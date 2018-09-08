@@ -1,7 +1,7 @@
 # identifierfy
 
-Rewrites an identifier string so it's valid according to ES2015. Tested with
-Node.js 0.10 and above.
+Rewrites an identifier string so it's valid according to ES2015. Works in
+**Node.js 6** and above.
 
 Please see [this awesome article by Mathias
 Bynens](https://mathiasbynens.be/notes/javascript-identifiers-es6) for
