@@ -38,12 +38,10 @@
     "esutils": "^2.0.2"
   },
   "nyc": {
-    "instrument": true,
     "reporter": [
       "lcov",
       "html",
       "text"
-    ],
-    "sourceMap": false
+    ]
   }
 }
