@@ -1,6 +1,5 @@
 .node-version
 .nyc_output
+package-lock.json
 coverage
 node_modules
-
-/dist
